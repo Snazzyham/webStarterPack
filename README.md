@@ -11,4 +11,11 @@ Start the development server with the command
 npm start
 ```
 
-For the moment, it looks exactly like Andrew's did, but I intend to add many things to this and modify somethings as well. I don't really use React so I might get rid of it, and I'm going to find a way to add gulp to this to compile my SCSS files. 
+## Additions 
+
+It now includes Gulp, which at the moment is set up to compile SCSS _(yes I use SCSS instead of SASS)_ into compressed CSS with a dash of autoprefixer thrown into the mix. 
+
+It's pretty janky how it works now, and may only work on Mac / Unix, cause I'm trying to run Gulp via the `npm start` command. 
+
+### Upcoming Features  
+I plan to add live reload to the mix, and may even mix it up and get rid of babel and everything, and use only Gulp, because I only see myself using the server and the SCSS stuff anyway. We'll see. 
