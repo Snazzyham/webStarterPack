@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync').create();
 
 var input = './scss/**/*.scss';
 var output = './www/css';
@@ -30,4 +31,16 @@ gulp.task('watch', function() {
     });
 });
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('browser-sync', function() {
+  browserSync.init(['./www/css/*.css', '.www/js/**/*.js', '.www/index.html'], {
+    server: {
+      baseDir: './www/'
+    }
+  });
+});
+
+
+gulp.task('default', ['sass', 'watch', 'browser-sync']);
+
+
+
