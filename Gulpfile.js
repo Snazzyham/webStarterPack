@@ -31,6 +31,7 @@ gulp.task('watch', function() {
     });
 });
 
+//browsersync is the server, it uses localhost:3000 as a default
 gulp.task('browser-sync', function() {
   browserSync.init(['./www/css/*.css', '.www/js/**/*.js', '.www/index.html'], {
     server: {

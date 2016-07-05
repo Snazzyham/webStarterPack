@@ -1,7 +1,7 @@
 {
   "name": "starterpack",
   "version": "1.0.0",
-  "description": "A starter kit I built while following Andrew Farmer's [Build Your Own Starter Kit](http://andrewhfarmer.com/build-your-own-starter).",
+  "description": "A simple af starter kit.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,6 +15,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/snazzyham/webStarterKit.git"
+    "url": "git://github.com/snazzyham/webStarterPack.git"
   }
 }
