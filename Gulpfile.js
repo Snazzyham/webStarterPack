@@ -1,7 +1,9 @@
+console.log('Node version: ' + process.version);
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
+//const imagemin     = require("gulp-imagemin");
 
 var input = './scss/**/*.scss';
 var output = './www/css';
@@ -18,6 +20,12 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(output));
 });
 
+/*gulp.task('images', function() {
+return gulp
+.src('src_images/*')
+.pipe(imagemin())
+.pipe(gulp.dest('www/img/'))
+});*/
 
 gulp.task('watch', function() {
   return gulp
